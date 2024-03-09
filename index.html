@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forecast</title>
+    <link rel="stylesheet" href="/assets/style/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__top">
+        <div class="wrapper__top__left">
+          <h1 id="location"></h1>
+          <div>
+            <p id="temperature"></p>
+            <p id="condition"></p>
+          </div>
+        </div>
+        <div class="wrapper__top__right">
+            <p id="weekday"></p><p id="maxTemp"></p><span id="minTemp"></p>
+        </div>
+      </div>
+      <div class="wrapper__bottom">
+        <div class="wrapper__bottom__left">
+          <div class="wrapper__bottom__left--fellsLike">
+            <p>Feels like</p>
+            <p id="fellsLike">°</p>
+          </div>
+          <div class="wrapper__bottom__left--wind">
+            <p>Wind</p>
+            <p id="wind"> km/h</p>
+          </div>
+          <div class="wrapper__bottom__left--humidity">
+            <p>Humidity</p>
+            <p id="humidity">%</p>
+          </div>
+          <div class="wrapper__bottom__left--uv">
+            <p>UV</p>
+            <p id="uv">0</p>
+          </div>
+          <div class="wrapper__bottom__left--visibility">
+            <p>Visibility</p>
+            <p id="visibility">km</p>
+          </div>
+          <div class="wrapper__bottom__left--pressure">
+            <p>Pressure</p>
+            <p id="pressure"> hPa</p>
+          </div>
+        </div>
+        <div class="wrapper__bottom__right">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="leftTop"></div>
+    <div class="rightBottom"></div>
+  <script type="text/javascript" src="config.js"></script>
+  <script src="/index.js"></script>
+  </body>
+  
+</html>
